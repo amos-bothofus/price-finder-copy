@@ -3,7 +3,7 @@ const router = express.Router();
 const multer = require("multer");
 const authMiddleWare = require("../middleware/middleware");
 const Question = require("../models/question");
-/*const tempOptionStaticData = require("../tempdata");
+const tempOptionStaticData = require("../tempdata");
 router.post("/save", async (req, res) => {
   try {
     for (const question of tempOptionStaticData) {
@@ -14,7 +14,7 @@ router.post("/save", async (req, res) => {
     console.log(error);
     res.status(500).send("Server Error");
   }
-});*/
+});
 
 // storage variable for multer
 const storage = multer.diskStorage({
