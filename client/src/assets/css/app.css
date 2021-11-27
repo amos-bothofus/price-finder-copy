@@ -1,0 +1,22 @@
+.ant-layout-sider-trigger {
+    z-index: 1;
+    height: 48px;
+    color: #fff;
+    background: #f1603f;
+}
+
+.ant-menu-item-selected {
+    color: #fff !important;
+    background-color: #f1603f !important;
+}
+.ant-menu-item-selected > .ant-menu-title-content {
+    color: #fff !important;
+}
+
+.ant-menu-inline.ant-menu-root .ant-menu-item > .ant-menu-title-content, .ant-menu-inline.ant-menu-root .ant-menu-submenu-title > .ant-menu-title-content {
+    flex: auto;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #f1603f;
+}

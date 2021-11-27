@@ -1,0 +1,119 @@
+
+.loading-text {
+  font-family: Lato, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.18;
+  letter-spacing: normal;
+  color: #2a1da1;
+}
+.ico-1{
+  width: 80px;
+  height: 80px;
+  background: url('../../assets/images/loader/loader-1.svg') center center no-repeat;
+  position: relative;
+  animation-name: ico-loading-1;
+  animation-timing-function: ease-in-out;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.ico-2{
+  width: 80px;
+  height: 80px;
+  z-index: 999;
+  background: url('../../assets/images/loader/loader-2.svg') center center no-repeat;
+  position: relative;
+}
+
+.ico-3{
+  width: 80px;
+  height: 80px;
+  background: url('../../assets/images/loader/loader-3.svg') center center no-repeat;
+  position: relative;
+  animation-name: ico-loading-3;
+  animation-timing-function: ease-in-out;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.ico-4{
+  width: 80px;
+  height: 80px;
+  background: url('../../assets/images/loader/loader-4.svg') center center no-repeat;
+  position: relative;
+  animation-name: ico-loading-4;
+  animation-timing-function: ease-in-out;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+
+
+  @keyframes ico-loading-1 {
+    0%   {left:0px; top:0px;}
+    25%  {left:112px; top:0px;}
+    50%  {left:112px; top:0px;}
+    100%  {left:0px; top:0px;}
+  }
+
+  @keyframes ico-loading-3 {
+    0%   {left:0px; right: 0px; top:0px; opacity: 1}
+    25%  {left:-110px; top:0px; opacity: 0;}
+    50%  {left:-110px; top:0px;   opacity: 0}
+    100%  {left:0px; top:0px; opacity: 100}
+
+  }
+
+  @keyframes ico-loading-4 {
+    0%   {left:0px; right: 0px; top:0px;}
+    25%  {left:-220px; top:0px;}
+    50%  {left:-220px; top:0px;}
+    100%  {left:0px; top:0px;}
+  }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .loading-text {
+    font-family: Lato, sans-serif;
+    font-size: 30px;
+    line-height: 1.18;
+    color: #2a1da1;
+  }
+  @keyframes ico-loading-1 {
+    0%   {left:0; top:0;}
+    25%  {left:30px; top:0px;}
+    50%  {left:30px; top:0px;}
+    100%  {left:0; top:0;}
+  }
+  @keyframes ico-loading-3 {
+    0%   {left:0px; right: 0px; top:0px; }
+    25%  {left:-28px; top:0px;  opacity: 0;}
+    50%  {left:-28px; top:0px; opacity: 0;}
+    100%  {left:0px; top:0px; opacity: 100;}
+
+  }
+  @keyframes ico-loading-4 {
+    0%   {left:0px; right: 0px; top:0px;}
+    25%  {left:-56px; top:0px;}
+    50%  {left:-56px; top:0px;}
+    100%  {left:0px; top:0px;}
+  }
+}
+
+
+/* component MainLoadingScreen  */
+.MainLoadingScreen {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  z-index: 15000;
+}
